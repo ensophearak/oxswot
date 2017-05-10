@@ -759,7 +759,7 @@ $ccw: 68px;
     height: 110px;
     overflow: hidden;
     position: relative;
-    transition: height .5s;
+    transition: height .3s;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
     border-radius: 3px;
     .body {
@@ -797,9 +797,9 @@ $ccw: 68px;
 .crstore_open {
     overflow: hidden;
     .create_cs_box {
-        height: auto;
+        height: 421px;
         z-index: 113;
-        transition: height .5s;
+        // transition: height .3s;
     }
     .overlay {
         display: block;

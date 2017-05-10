@@ -1,0 +1,20 @@
+<form [formGroup]="form">
+    <div>{{errorMessage}}</div>
+    <div ng-messages class="ng-active" *ngIf="id.hasError('exist')" aria-hidden="true">
+        <div ng-message="id.hasError('exist')"> Store No is not available</div>
+    </div>
+    <md-input-container>
+        <input mdInput formControlName="id" placeholder="Store No">
+    </md-input-container>
+    <md-input-container>
+        <input mdInput formControlName="width" placeholder="Width">
+    </md-input-container>
+    <md-input-container>
+        <input mdInput formControlName="height" placeholder="Height">
+    </md-input-container>
+    <md-input-container>
+        <input mdInput formControlName="note" placeholder="Note">
+    </md-input-container>
+
+    <button md-button type="submit" (click)="onCreate()" [disabled]="!form.valid" class="btn btn-primary">Create</button>
+</form>

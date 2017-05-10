@@ -1,0 +1,85 @@
+.form_content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form_groups {
+    padding-bottom: 40px;
+    label {
+        display: block;
+        color: #505050;
+        font-size: 14px;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+        font-weight: bold;
+        padding-bottom: 6px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="url"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+        background-color: white;
+        border: 0;
+        border-radius: 0;
+        box-shadow: 0 0 0 transparent inset, 0 0 0 1px #e0e0e0 inset;
+        box-sizing: border-box;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0;
+        max-width: 100%;
+        outline: 0;
+        padding: 8px;
+        transition: box-shadow .15s;
+        vertical-align: middle;
+        -webkit-appearance: none;
+        width: 100%;
+        max-height: 36px;
+    }
+    textarea {
+        min-height: 100px;
+        resize: none;
+    }
+    input[type="text"]:focus,
+    input[type="time"]:focus,
+    input[type="password"]:focus,
+    input[type="url"]:focus,
+    input[type="number"]:focus,
+    input[type="search"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        -webkit-box-shadow: 0 -2px 0 #039be5 inset, 0 0 0 1px #e0e0e0 inset;
+        box-shadow: 0 -2px 0 #039be5 inset, 0 0 0 1px #e0e0e0 inset;
+    }
+}
+
+.form_groups_flx {
+    display: flex;
+    justify-content: space-between;
+    input[type="text"],
+    input[type="password"],
+    input[type="url"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+        width: 48%;
+    }
+}
+
+.create_cs_box {
+    .form_groups {
+        input[type="text"],
+        input[type="password"],
+        input[type="url"],
+        input[type="number"],
+        input[type="email"],
+        textarea {
+            padding-left: 24px;
+            padding-right: 24px;
+            max-height: unset;
+            line-height: 36px;
+        }
+    }
+}

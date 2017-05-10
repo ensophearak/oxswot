@@ -1,0 +1,62 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import './assets/css/variable.scss';
+@import './assets/css/fonts.scss';
+@import './assets/css/global.scss';
+@import './assets/css/form.scss';
+@import './assets/css/login.scss';
+@import './assets/css/header.scss';
+@import './assets/css/sidebar.scss';
+@import './assets/css/main.scss';
+@media only screen and (max-width: 320px) {}
+
+
+/* mobile large (android) ----------- */
+
+@media only screen and (max-width: 685px) {}
+
+@media only screen and (max-width: 685px) and (orientation: landscape) {}
+
+@media only screen and (max-width: 736px) and (orientation: landscape) {}
+
+
+/* ipad portrait/landscape ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+
+/* ipad portrait ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {}
+
+
+/* ipad landscape ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {}
+
+
+/* small displays ----------- */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* 13 inch displays ----------- */
+
+@media only screen and (min-width: 1224px) {}
+
+@media screen and (max-device-width: 1224px) {}
+
+@media only screen and (min-width: 1366px) {}
+
+
+/* 24 inch iMac ----------- */
+
+@media only screen and (min-width: 1600px) {
+    .oxswot_container {
+        max-width: 1200px
+    }
+}
+
+
+/* 27 inch iMac ----------- */
+
+@media only screen and (min-width: 2400px) {}

@@ -1,0 +1,20 @@
+<div class="login_container">
+    <div class="login_box">
+        <div class="l_col">
+            <form [formGroup]="form" class="form_content">
+                <div>{{errorMessage}}</div>
+                <div class="form_groups">
+                    <input type="email" formControlName="email" placeholder="Email">
+                </div>
+                <div class="form_groups">
+                    <input type="password" formControlName="password" placeholder="Password">
+                </div>
+
+                <button class="submit_btn" type="submit" (click)="onLogin()" [disabled]="!form.valid">Log In</button>
+            </form>
+        </div>
+        <div class="r_col">
+            lorem
+        </div>
+    </div>
+</div>

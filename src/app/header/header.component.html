@@ -1,0 +1,127 @@
+<header class="oxswot_header">
+    <nav class="oxswot_navigation">
+        <div class="oxswot_container_full">
+            <div class="oxswot_layout">
+                <div class="oxswot_appbar">
+                    <div class="oxswot_toggle_menu" [class.active]="opensidebar" (click)="toggleopensidebar()">
+                        <span class="line"></span>
+                    </div>
+                    <h1 [routerLink]="['']" class="app_title">Oxswot</h1>
+                </div>
+                <div class="oxswot_appbar border_l oxswot_appbar_left oxswot_appbar_menu">
+                    <div class="oxwot_menu_top">
+                        <a class="m_link">
+                            Store
+                        </a>
+                    </div>
+                    <div class="oxwot_menu_top">
+                        <a class="m_link">
+                            Customer
+                        </a>
+                    </div>
+                    <div class="oxwot_menu_top">
+                        <a class="m_link">
+                            Daily
+                        </a>
+                    </div>
+                </div>
+                <div class="oxswot_flx"></div>
+                <div class="oxswot_appbar_search">
+                    <div class="search_overlay" (click)="togglesearch()"></div>
+                    <div class="search_wrapper" [class.active]="opensearch">
+                        <div class="search_field">
+                            <i class="material-icons">search</i>
+                            <input type="text" placeholder="Search">
+                        </div>
+                        <div class="data_search_content">
+                            <div class="data_search_items">
+                                <div class="data_search_items_list">
+                                    <div class="title">lorem</div>
+                                    <div class="sub_title">Lorem ipsum dolor.</div>
+                                </div>
+                                <div class="data_search_items_list">
+                                    <div class="title">lorem</div>
+                                    <div class="sub_title">Lorem ipsum dolor.</div>
+                                </div>
+                                <div class="data_search_items_list">
+                                    <div class="title">lorem</div>
+                                    <div class="sub_title">Lorem ipsum dolor.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="oxswot_appbar oxswot_appbar_right oxswot_appbar_menu" [class.hidden]="opensearch">
+                    <!--<a [routerLink]="['/']">home</a>
+                    <a [routerLink]="['/login']">login</a>-->
+
+                    <div class="oxwot_menu_top">
+                        <button md-icon-button (click)="togglesearch()">
+                            <md-icon>search</md-icon>
+                        </button>
+                        <button md-icon-button [mdMenuTriggerFor]="menuapp">
+                            <md-icon>apps</md-icon>
+                        </button>
+                        <md-menu #menuapp="mdMenu">
+                            <button md-menu-item>
+                            <md-icon>dialpad</md-icon>
+                            <span>Redial</span>
+                        </button>
+                            <button md-menu-item disabled>
+                            <md-icon>voicemail</md-icon>
+                            <span>Check voicemail</span>
+                        </button>
+                            <button md-menu-item>
+                            <md-icon>notifications_off</md-icon>
+                            <span>Disable alerts</span>
+                        </button>
+                        </md-menu>
+
+                        <button md-icon-button [mdMenuTriggerFor]="menu">
+                            <md-icon>notifications</md-icon>
+                        </button>
+                        <md-menu #menu="mdMenu">
+                            <button md-menu-item>
+                            <md-icon>dialpad</md-icon>
+                            <span>Redial</span>
+                        </button>
+                            <button md-menu-item disabled>
+                            <md-icon>voicemail</md-icon>
+                            <span>Check voicemail</span>
+                        </button>
+                            <button md-menu-item>
+                            <md-icon>notifications_off</md-icon>
+                            <span>Disable alerts</span>
+                        </button>
+                        </md-menu>
+
+                        <button md-icon-button [mdMenuTriggerFor]="usermenu">
+                            <img class="user_tpro" src="https://lh3.googleusercontent.com/-Lr7SldShDiE/AAAAAAAAAAI/AAAAAAAAAAA/AMcAYi_zaDna2YVZ54Dq08osM14srb14Og/s32-c-mo/photo.jpg" alt="">
+                        </button>
+                        <md-menu #usermenu="mdMenu">
+                            <button md-menu-item>
+                            <md-icon>dialpad</md-icon>
+                            <span>Redial</span>
+                           
+                        </button>
+                            <button md-menu-item disabled>
+                            <md-icon>voicemail</md-icon>
+                            <span>Check voicemail</span>
+                        </button>
+                            <button md-menu-item>
+                            <md-icon>notifications_off</md-icon>
+                            <span>Disable alerts</span>
+                        </button>
+                        </md-menu>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="oxswot_overlay_sidebar" (click)="toggleopensidebar()"></div>

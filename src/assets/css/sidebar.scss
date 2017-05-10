@@ -1,0 +1,98 @@
+.sidebar {
+    width: 280px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    transform: translate(-100%, 0);
+    transition-duration: .3s;
+    .sidebar_content {
+        opacity: 0;
+        transform: translate(-100%, 0);
+        transition-duration: .3s;
+    }
+    &.sidebar_show {
+        z-index: 112;
+        transform: translate(0, 0);
+        width: 280px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, .28);
+        .sidebar_content,
+        .sidebar_header {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+}
+
+.oxswot_overlay_sidebar {
+    visibility: hidden;
+    transform: translate(-100%, 0);
+    transition-duration: .3s;
+}
+
+.sidebar_open {
+    .oxswot_overlay_sidebar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        visibility: visible;
+        transform: translate(0, 0);
+        background-color: rgba(#fff, 0);
+        z-index: 111;
+    }
+}
+
+.sidebar_header {
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+    transform: translate(-100%, 0);
+    transition-duration: .3s;
+    h1 {
+        display: block;
+        padding: 8px 24px;
+        margin: 0;
+        width: 100%;
+        font-family: "Product Sans", "Helvetica", arial, sans-serif;
+        font-weight: 400;
+        color: #424242;
+        font-size: 24px;
+        text-transform: capitalize;
+    }
+}
+
+.sidebar_lists {
+    margin: 0;
+    padding: 12px 0;
+    list-style-type: none;
+    border-bottom: 1px solid #ebebeb;
+    &:last-child {
+        border-bottom: 1px solid transparent;
+    }
+    .sidebar_lists_item {
+        .sidebar_item_link {
+            padding: 12px 24px;
+            display: flex;
+            color: #555;
+            font-size: 14px;
+            font-weight: 500;
+            align-items: center;
+            transition: background-color .3s ease-out;
+            &:hover {
+                background-color: #fafafa;
+                i {
+                    color: #333;
+                }
+            }
+        }
+    }
+    .sidebar_item_link i {
+        margin-right: 24px;
+        font-size: 24px;
+    }
+}

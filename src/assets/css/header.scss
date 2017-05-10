@@ -1,0 +1,16 @@
+.oxswot_header {
+    background-color: transparent;
+    position: relative;
+    min-height: $headerheight;
+    z-index: 111;
+}
+
+.oxswot_navigation {
+    background-color: #4285F4;
+    min-height: $headerheight;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+}

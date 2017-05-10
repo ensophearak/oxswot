@@ -23,7 +23,7 @@
     }
     .login_box {
         height: 550px;
-        width: 70%;
+        width: 50%;
         margin: 0 auto;
         padding: 0;
         background-color: #fafafa;
@@ -40,4 +40,9 @@
             background-color: #263238;
         }
     }
+}
+
+.title_h3 {
+    font-size: 24px;
+    font-weight: 400;
 }

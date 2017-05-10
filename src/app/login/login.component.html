@@ -1,17 +1,28 @@
 <div class="login_container">
     <div class="login_box">
         <div class="l_col">
-            <form [formGroup]="form" class="form_content">
-                <div>{{errorMessage}}</div>
-                <div class="form_groups">
-                    <input type="email" formControlName="email" placeholder="Email">
+            <div class="form_content">
+                <div class="header_bock">
+                    <h3 class="title_h3">Login</h3>
+                    <!--<p>Use your Oxswot account</p>-->
                 </div>
-                <div class="form_groups">
-                    <input type="password" formControlName="password" placeholder="Password">
-                </div>
+                <form [formGroup]="form" class="">
+                    <div>{{errorMessage}}</div>
+                    <div class="form_groups">
+                        <label for="email">Email</label>
+                        <input type="email" formControlName="email">
+                    </div>
+                    <div class="form_groups">
+                        <label for="password">Password</label>
+                        <input type="password" formControlName="password">
+                    </div>
 
-                <button class="submit_btn" type="submit" (click)="onLogin()" [disabled]="!form.valid">Log In</button>
-            </form>
+                    <button class="submit_btn" type="submit" (click)="onLogin()" [disabled]="!form.valid">
+                        <i class="material-icons">&#xE897;</i>
+                        Sign In
+                    </button>
+                </form>
+            </div>
         </div>
         <div class="r_col">
             lorem
